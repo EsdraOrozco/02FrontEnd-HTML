@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Orden </title>
+        <link rel="stylesheet" href="./estilos.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li><a href="./main.html">HOME</a></li>
+                        <li><a href="./ordenar.html">ORDENAR</a></li>
+                        <li><a href="./contacto.html">CONTACTANOS</a></li>
+                        <li><a href="./ingresar.html">INGRESAR</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!--SECCIÓN-->
+        <section>
+            <div class="divview">
+                <table class="table">
+                    <tr>
+                        <th text-aling="center">SABORES</th>
+                        <th text-aling="center">ADORNOS</th>
+                        <th text-aling="center">TAMAÑOS</th>
+                    </tr>
+                    <!--Fila 1-->
+                    <tr>
+                        <!--Fila 1 columa1-->
+                        <td><img src="./chocolate.png" alt="" width="70" height="70"><br>
+                        <label for=""> Chocolate </label><br>
+                        <label for=""> $150</label></td>
+                        <!--Fila 1 columa2-->
+                        <td><img src="./6.png" alt="" width="70" height="70"><br>
+                        <label for=""> Frutos </label><br>
+                        <label for=""> $100 </label></td>
+                        <!--Fila 1 columa3-->
+                        <td><img src="./11.png" alt="" width="70" height="70"><br>
+                        <label for=""> 1 piso </label><br>
+                        <label for=""> $200 </label></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./2.png" alt="" width="70" height="70"><br>
+                        <label for=""> Fresa </label><br>
+                        <label for=""> $180</label></td>
+                        <!--Fila 2 columa2-->
+                        <td><img src="./7.png" alt="" width="70" height="70"><br>
+                        <label for=""> Flores </label><br>
+                        <label for=""> $200 </label></td>
+                        <!--Fila 2 columa3-->
+                        <td><img src="./12.png" alt="" width="70" height="70"><br>
+                        <label for=""> 2 pisos </label><br>
+                        <label for=""> $400 </label></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./3.png" alt="" width="70" height="70"><br>
+                        <label for=""> Tres leches </label><br>
+                        <label for=""> $200</label></td>
+                        <!--Fila 3 columa2-->
+                        <td><img src="./8.png" alt="" width="70" height="70"><br>
+                        <label for=""> Chispas v/colores </label><br>
+                        <label for=""> $25 </label></td>
+                        <!--Fila 3 columa3-->
+                        <td><img src="./13.png" alt="" width="70" height="70"><br>
+                        <label for=""> 3 pisos </label><br>
+                        <label for=""> $600 </label></td>
+                    </tr>
+
+                    <tr>
+                        <td><img src="./4.png" alt="" width="70" height="70"><br>
+                        <label for=""> Durazno </label><br>
+                        <label for=""> $250</label></td>
+                        <!--Fila 3 columa2-->
+                        <td><img src="./9.png" alt="" width="70" height="70"><br>
+                        <label for=""> Muñecos v/cerámica </label><br>
+                        <label for=""> $100 c/u </label></td>
+                        <!--Fila 3 columa3-->
+                        <td><img src="./14.png" alt="" width="70" height="70"><br>
+                        <label for=""> 4 pisos </label><br>
+                        <label for=""> $800 </label></td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+        <aside class="formulario">
+            <div>
+                <form action="">
+                    <h2>INGRESE SUS DATOS</h2>
+                    <p class="pp">Seleccione el sabor del pastel:
+                    <!--lista desplegable-->
+                    <select class="select">
+                        <option value="v1"> Chocolate </option>
+                        <option value="v2"> Fresa </option>
+                        <option value="v3"> Tres leches</option>
+                        <option value="v4"> Durazno </option>
+                    </select> </p><br>
+
+                    <!--Checkbox-->
+                    <p class="pp">Seleccione sus adornos:</p>
+                    <p class="check">
+                    <input type="checkbox" id="l1" name="l1">
+                    <label for="l1" class="lab1">Frutos</label><br>
+                    <input type="checkbox" id="l2" name="l2">
+                    <label for="l2" class="lab1">Flores</label><br>
+                    <input type="checkbox" id="l3" name="l3">
+                    <label for="l3" class="lab1">Chispas</label><br>
+                    <input type="checkbox" id="l4" name="l4">
+                    <label for="l4" class="lab1">Muñecos</label><br>
+                    </p><br>
+                    
+                    <p class="pp">Seleccione los pisos del pastel:
+                        <select class="select2">
+                            <option value="v1"> 1 piso </option>
+                            <option value="v2"> 2 pisos </option>
+                            <option value="v3"> 3 pisos </option>
+                            <option value="v4"> 4 pisos </option>
+                        </select>
+                    </p>
+
+                    <p class="pp">
+                    <label>Ingrese su nombre</label>
+                    <input type="text" id="nombre"><br>
+                    <label for="">Ingrese su telefono:</label>
+                    <input type="number" id="tel" maxlength="10"><br>
+                    <label for="">Ingrese su correo electrónico:</label>
+                    <input type="email" id="email"><br><br>
+                    <textarea class="ta" name="comentarios" rows="10" cols="60">Describa su pastel</textarea>
+                    </p> <br>
+                    <input type="submit" name="botn" id="boton" value="ORDENAR" onclick="alert('SU PEDIDO A SIDO EXITOSO');">
+                    <input type="reset" id="rest" value="CANCELAR">
+                    
+                </form>
+            </div>
+        </aside>
+        <footer>
+            DERECHOS RESERVADOS
+        </footer>
+
+
+    </body>
+</html>
